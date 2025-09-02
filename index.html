@@ -15,11 +15,24 @@
   <style>
     .text-inner{
         left: 60px;
+        bottom: 60px;
     }
-
+    .text-inner-card{
+        padding: 75px 90px 75px 70px;
+    }
+    .text-inner-card p{
+            font-size: 24px;
+        }
     @media (max-width: 576px){
         .text-inner{
-            left:30px;
+            left:10px;
+            bottom: 40px;
+        }
+        .text-inner-card{
+        padding: 25px;
+        }
+        .text-inner-card p{
+            font-size: 19px;
         }
     }
   </style>
@@ -98,19 +111,19 @@
         </div>
     
         <!-- Bottom-left text block -->
-        <div class="position-absolute text-inner" style="bottom:60px; z-index: 10;">
+        <div class="position-absolute text-inner" style=" z-index: 10;">
         <div class="row">
             <div class="col-11 col-md-10 col-lg-8">
-            <div class="bg-white bg-opacity-95 shadow-xl rounded-4 " style="padding: 75px 90px 75px 70px;">
-                <h1 class="display-1 fw-bold mb-3 mb-lg-4 text-start text-md-start">
+            <div class="bg-white bg-opacity-95 shadow-xl rounded-4 text-inner-card" style="">
+                <h1 class="display-sm-1 fw-bold mb-sm-3 mb-lg-4 text-start text-md-start">
                 Creative. Smart. Awesome.
                 </h2>
-                <p class="text-start text-md-start mb-4" style="font-size: 24px;">
+                <p class="text-start text-md-start mb-sm-4">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                 </p>
                 <div class="d-flex gap-2">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#modal-contact"  class="btn btn-primary px-4 py-2">Let’s Talk</a>
-                <a href="#projects" class="btn btn-outline-primary px-4 py-2">See projects</a>
+                <a href="#projects" class="btn btn-outline-primary px-4 d-none d-sm-block py-2">See projects</a>
                 </div>
             </div>
             </div>
